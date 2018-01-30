@@ -6,12 +6,11 @@ install:
 script:
 - npm run build
 deploy:
-  matrix:
-  - provider: npm
-    email: opensource@128technology.com
-    skip_cleanup: true
-    api_key:
-      secure: JqAjPnFojgWDKRTczsBPLeDAJ0vvXtpIRmrFTclN4TlQW3ZeKvVqD1Erkut+gvfI8v+pyKV/YX2U2qdrTKps/tSasgquACJIH92I+xrTTEnHAdhALoF/S22t3+LbnXgOfEP/KEIIxEFvIAgoiIkVTRJwXpymzpoFXlN3yUhBX1yUVh1IsWUXiawyofIq3gR0EIxjZvywyDAZzYCopup/RNUOGST/VjfQlVMetDMnr3XPtC6bcvj+9WkaDuwoV223CCJRo6ysNlGU/XaswvkLASPkl9F2JMyPwsJvYafsVJO3DAs15iFoYDFpVmqB+u/3OHha79Bv21tjY3ao9Uj3Mp9cxycaUtZiOJsLZQ5EYWArOuZntqWT5OgDBEfPqtVzKikEZT/lHuOoZ/jz/QpKTcWLWgWo/tTaxmvdFLevmAvPVU+4kwlb72mSij91f4WAwzzg9m15bcMXnkQ7fFPT897WJCZVr0s2EZWMUQgBYhCT2q8rEeCY3N9jTuEkzx+JF8KyibzwMiS4JlLW/7068WdWICG6+WCOIvMt50QCFSq+27x6Bbp3BqxTeLStseXva0+zNG9wz85O6/if0DZHu0KEvyakdV35g+RQ5WMB/BN7QLMuD+vbwjJxrvTj4T44yb8qgSgZtG2fI3xWyKRPg95r8JdJO2DFZBbBRdm5x+U=
-    on:
-      repo: 128technology/react-select
-      branch: master
+- provider: npm
+  email: opensource@128technology.com
+  skip_cleanup: true
+  api_key:
+    secure: JqAjPnFojgWDKRTczsBPLeDAJ0vvXtpIRmrFTclN4TlQW3ZeKvVqD1Erkut+gvfI8v+pyKV/YX2U2qdrTKps/tSasgquACJIH92I+xrTTEnHAdhALoF/S22t3+LbnXgOfEP/KEIIxEFvIAgoiIkVTRJwXpymzpoFXlN3yUhBX1yUVh1IsWUXiawyofIq3gR0EIxjZvywyDAZzYCopup/RNUOGST/VjfQlVMetDMnr3XPtC6bcvj+9WkaDuwoV223CCJRo6ysNlGU/XaswvkLASPkl9F2JMyPwsJvYafsVJO3DAs15iFoYDFpVmqB+u/3OHha79Bv21tjY3ao9Uj3Mp9cxycaUtZiOJsLZQ5EYWArOuZntqWT5OgDBEfPqtVzKikEZT/lHuOoZ/jz/QpKTcWLWgWo/tTaxmvdFLevmAvPVU+4kwlb72mSij91f4WAwzzg9m15bcMXnkQ7fFPT897WJCZVr0s2EZWMUQgBYhCT2q8rEeCY3N9jTuEkzx+JF8KyibzwMiS4JlLW/7068WdWICG6+WCOIvMt50QCFSq+27x6Bbp3BqxTeLStseXva0+zNG9wz85O6/if0DZHu0KEvyakdV35g+RQ5WMB/BN7QLMuD+vbwjJxrvTj4T44yb8qgSgZtG2fI3xWyKRPg95r8JdJO2DFZBbBRdm5x+U=
+  on:
+    repo: 128technology/react-select
+    branch: master
